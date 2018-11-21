@@ -1,46 +1,48 @@
 #include "Elevator.h"
 
+
+
 Elevator::Elevator(string Name, double LoadCapacity, double MotorPower, double Height, double Witdth)
 {
-	name = Name;
+	elevatorName = Name;
 	loadCapacity = LoadCapacity;
 	motorPower = MotorPower;
-	height = Height;
-	witdth = Witdth;
+	elevatorHeight = Height;
+	elevatorWitdth = Witdth;
 }
 
-Elevator::Elevator(string Name, double Speed, double Test)
+Elevator::Elevator(string Name, double Speed, double TestVariable)
 {
-	name = Name;
-	speed = Speed;
-	test = Test;
+	elevatorName = Name;
+	elevatorSpeed = Speed;
+	testVariable = TestVariable;
 }
 
-void Elevator::get_name() 
+void Elevator::getElevatorName()
 {
-	cout << "Name: " << name << endl;
+	cout << "Name: " << elevatorName << endl;
 }
-void Elevator::get_loadCapacity()
+void Elevator::getLoadCapacity()
 {
 	cout << "Load Capacity: " << loadCapacity << endl;
 }
-void Elevator::get_MotorPower()
+void Elevator::getMotorPower()
 {
 	cout << "MotorPower: " << motorPower << endl;
 }
-void Elevator::get_height()
+void Elevator::getElevatorHeight()
 {
-	cout << "Height: " << height << endl;
+	cout << "Height: " << elevatorHeight << endl;
 }
-void Elevator::get_witdth()
+void Elevator::getElevatorWitdth()
 {
-	cout << "Witdth :" << witdth << "\n" << endl;
+	cout << "Witdth :" << elevatorWitdth << "\n" << endl;
 }
-void Elevator::get_speed()
+void Elevator::getElevatorSpeed()
 {
-	cout << "Speed: " << speed << endl;
+	cout << "Speed: " << elevatorSpeed << endl;
 }
-void Elevator::get_test()
+void Elevator::getTestVariable()
 {
-	cout << "Test: " << test << endl;
+	cout << "Test: " << testVariable << endl;
 }
